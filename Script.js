@@ -8,21 +8,20 @@ function enterFirstNumber() {
     if (a == null) {
         return
     }
+
     else if (!isNumeric(a)) {
         alert("Enter correct first number");
         return enterFirstNumber()
     }
-    else {
 
+    else {
         return a;
     }
-
 }
 
 var firsNum = enterFirstNumber();
 
-if (firsNum !=null) {
-
+if (firsNum != null) {
     function enterSecondNumber() {
             var b = prompt("Enter the second number", "");
             if (b == null) {
@@ -31,16 +30,23 @@ if (firsNum !=null) {
             else if (!isNumeric(b)) {
                 alert("Enter correct second number");
                 return enterSecondNumber()
-            }else
-
+            }
+            else {
                 return b
             }
+    }
     var secondNum = enterSecondNumber();
 
-if (secondNum) {
-var j = +firsNum + +secondNum;
-alert(j);}
-    else{alert ("You have just pressed Cancel baton. Good Luck!")}
-} else {
+    if (secondNum) {
+    var j = +firsNum + +secondNum;
+    alert(j);
+    }
+
+    else{
+        alert ("You have just pressed Cancel baton. Good Luck!")
+    }
+}
+
+else {
     alert ("You have just pressed Cancel baton. Good Luck!")
 }
